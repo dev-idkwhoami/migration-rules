@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Composer
+/vendor/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Laravel
+/storage/
+/node_modules/
+/vendor/

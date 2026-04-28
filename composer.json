@@ -1,0 +1,32 @@
+{
+  "name": "idkwhoami/migration-rules",
+  "description": "Enforce consistent Laravel migration naming and ordering via topological sort, inlining, and regeneration.",
+  "type": "library",
+  "version": "0.1.0",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "illuminate/contracts": "^12.0|^13.0",
+    "laravel/prompts": "^0.3.17"
+  },
+  "scripts": {
+    "lint": "pint --parallel"
+  },
+  "autoload": {
+    "psr-4": {
+      "Idkwhoami\\MigrationRules\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Idkwhoami\\MigrationRules\\MigrationRulesServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.29"
+  }
+}
